@@ -12,6 +12,7 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
+    "husky": "^3.0.0",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-unit-test-runner": "^0.6.4",
     "nativescript-vue": "~2.2.0",
@@ -34,6 +35,11 @@
     "nativescript-vue-template-compiler": "~2.2.0",
     "node-sass": "^4.7.1",
     "vue-loader": "~15.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tns test android --justlaunch"
+    }
   },
   "gitHead": "8c1a4866a66daab09bf5ef8e5a96472687192373",
   "readme": "NativeScript Application"
